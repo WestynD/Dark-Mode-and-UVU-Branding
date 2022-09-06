@@ -6,6 +6,7 @@ body {
 }
 
 header {
+  font-family: Rajdhani, Arial, sans-serif;
   background-color: #275d38;
   padding: 10px;
   margin-bottom: 25px;
@@ -18,17 +19,18 @@ header h1 {
 #navBar {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
 }
 
 #navbar ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 #navbar ul li {
+  display: inline;
 }
 
 form {
