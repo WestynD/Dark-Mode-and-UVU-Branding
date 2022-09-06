@@ -14,13 +14,13 @@ header {
 }
 
 header h1 {
-  color: #35712c;
+  color: #275d38;
 }
 
 #navBar {
   font-family: Rajdhani semibold, Arial, sans-serif;
   margin-bottom: 25px;
-  color: #35712c;
+  color: #275d38;
 }
 
 #navBar ul {
@@ -51,7 +51,7 @@ header h1 {
 }
 
 hr {
-  border-bottom: 3px solid #35712c;
+  border-bottom: 3px solid #275d38;
   border-top: 0px;
   border-right: 0px;
   border-left: 0px;
