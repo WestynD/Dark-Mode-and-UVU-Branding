@@ -9,13 +9,11 @@ header {
   font-family: Rajdhani, Arial, sans-serif;
   background-color: #fff;
   box-shadow: 0px 0px 10px black;
-  position: relative;
-  z-index: 2;
   padding: 10px;
 }
 
 header h1 {
-  color: white;
+  color: #35712c;
 }
 
 #navBar {
