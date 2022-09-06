@@ -38,8 +38,15 @@ header h1 {
   display: inline;
 }
 
+.active {
+  background-color: #35712c;
+}
+
 hr {
   border-bottom: 3px solid #35712c;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
   margin: 0px;
   padding: 0px;
 }
