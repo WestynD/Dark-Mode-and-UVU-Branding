@@ -16,7 +16,19 @@ header h1 {
 }
 
 #navBar {
-  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navbar ul li {
 }
 
 form {
