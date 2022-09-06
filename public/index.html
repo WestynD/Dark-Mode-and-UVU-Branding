@@ -13,9 +13,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body onload="onPageLoad()">
-    <head>
-      <p>Utah Valley University Logging System</p>
-    </head>
+    <header>
+      <h1>Utah Valley University Logging System</h1>
+    </header>
+    <nav id="navBar">
+      <ul>
+        <li>Home</li>
+        <li>Logging System</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
     <form id="logForm">
       <select
         aria-label="Select Course"
@@ -28,7 +36,13 @@
 
       <div id="idDiv" class="hidden">
         <label for="uvuId">UVU ID</label><br />
-        <input type="text" id="uvuId" name="uvuId" data-cy="uvuId_input" />
+        <input
+          type="text"
+          id="uvuId"
+          name="uvuId"
+          placeholder="10234567"
+          data-cy="uvuId_input"
+        />
         <p id="idWarning" class="hidden warning"></p>
       </div>
 
