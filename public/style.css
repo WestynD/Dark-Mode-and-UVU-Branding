@@ -18,8 +18,9 @@ header h1 {
 }
 
 #navBar {
-  font-family: Rajdhani, Arial, sans-serif;
+  font-family: Rajdhani semibold, Arial, sans-serif;
   margin-bottom: 25px;
+  color: #35712c;
 }
 
 #navBar ul {
@@ -41,10 +42,12 @@ header h1 {
 
 #navBar ul li:hover {
   background-color: #1e482c;
+  color: #fff;
 }
 
 .active {
   background-color: #35712c;
+  color: #fff;
 }
 
 hr {
