@@ -7,9 +7,11 @@ body {
 
 header {
   font-family: Rajdhani, Arial, sans-serif;
-  background-color: #275d38;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px black;
+  position: relative;
+  z-index: 2;
   padding: 10px;
-  margin-bottom: 25px;
 }
 
 header h1 {
@@ -18,8 +20,7 @@ header h1 {
 
 #navBar {
   font-family: Rajdhani, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 25px;
 }
 
 #navBar ul {
@@ -31,7 +32,9 @@ header h1 {
 }
 
 #navBar ul li {
+  padding-left: 25px;
   display: inline;
+  padding-right: 10px;
 }
 
 form {
