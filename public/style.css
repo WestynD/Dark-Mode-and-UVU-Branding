@@ -31,8 +31,16 @@ header h1 {
 
 #navBar ul li {
   padding-left: 25px;
-  display: inline;
   padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline;
+}
+
+hr {
+  border-bottom: 3px solid #35712c;
+  margin: 0px;
+  padding: 0px;
 }
 
 form {
