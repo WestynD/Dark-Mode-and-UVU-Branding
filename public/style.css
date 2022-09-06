@@ -39,7 +39,7 @@ header h1 {
   display: inline;
 }
 
-#navBar ul li :hover {
+#navBar ul li:hover {
   background-color: #1e482c;
 }
 
