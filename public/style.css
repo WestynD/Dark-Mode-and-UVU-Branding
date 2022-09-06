@@ -23,19 +23,24 @@ header h1 {
 }
 
 #navBar ul {
-  margin: 0;
+  margin: auto;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 #navBar ul li {
   padding-left: 25px;
-  padding-right: 10px;
+  padding-right: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline;
+}
+
+#navBar ul li :hover {
+  background-color: #1e482c;
 }
 
 .active {
