@@ -13,6 +13,14 @@ header {
   padding-left: 25px;
 }
 
+#headerDiv {
+  display: flex;
+}
+
+#headerDiv img {
+  margin-right: 25px;
+}
+
 header h2 {
   color: #275d38;
 }
