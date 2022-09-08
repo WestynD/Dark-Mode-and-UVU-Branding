@@ -172,6 +172,7 @@ function getDarkModePreference() {
       localStorage.setItem('darkMode', 'light')
       currentMode = 'light'
     } else {
+      //set to light if no browse preference
       console.log('Preference Unknown. Preference set to light by default.')
       localStorage.setItem('darkMode', 'light')
       currentMode = 'light'
@@ -186,9 +187,13 @@ function getDarkModePreference() {
     console.log('Oops, unexpected value in localStorage!')
   }
 
-  
-
-  //set to light if none
+  if (currentMode === 'dark') {
+    document.body.classList.add('darkMode')
+  } else if (currentMode === 'light') {
+    document.body.classList.remove('darkMode')
+  } else {
+    console.log(`This isn't dark or light... this shouldn't be happening...`)
+  }
 
   //   To show us that you did all the checks, print the following to the console.
 
