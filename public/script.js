@@ -157,6 +157,7 @@ function getDarkModePreference() {
     // Should be the last case:  localStorage.setItem('darkMode', false)
     console.log('User Pref: unknown')
     //check for browser preference
+    //There isn't a way to get OS and Browser preferences separately
     if (
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -194,14 +195,6 @@ function getDarkModePreference() {
   } else {
     console.log(`This isn't dark or light... this shouldn't be happening...`)
   }
-
-  //   To show us that you did all the checks, print the following to the console.
-
-  // User Pref: [light, dark, unknown]
-
-  // Browser Pref: [light, dark, unkown]
-
-  // OS Pref: [light, dark, unknown]
 }
 
 document.querySelector('#themeButton').addEventListener('click', function () {
