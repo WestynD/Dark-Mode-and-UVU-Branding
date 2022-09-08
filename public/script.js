@@ -171,9 +171,9 @@ function getDarkModePreference() {
       console.log('Preference Unknown. Preference set to light by default.')
       localStorage.setItem('darkMode', false)
     }
-  } else if (darkPreferred === true) {
+  } else if (darkPreferred === 'true') {
     console.log('User Pref: dark')
-  } else if (darkPreferred === false) {
+  } else if (darkPreferred === 'false') {
     console.log('User Pref: light')
   } else {
     console.log('Oops, unespected value in localStorage!')
