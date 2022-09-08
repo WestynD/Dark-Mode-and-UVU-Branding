@@ -105,7 +105,7 @@ async function requestLogs() {
         document.getElementById('uvuIdDisplay').innerHTML = `Student Logs for ${
           document.getElementById('uvuId').value
         }`
-        document.querySelector('form > button').disabled = false
+        document.querySelector('form button').disabled = false
       }
     } else {
       logContainer.innerHTML = `<p class="warning">Something went wrong. Please try again</p>`
@@ -204,4 +204,16 @@ function getDarkModePreference() {
   // OS Pref: [light, dark, unknown]
 }
 
+document.querySelector('#themeButton').addEventListener('click', switchTheme)
 
+function switchTheme() {
+  if (currentMode === 'dark') {
+    document.body.classList.remove('darkMode')
+    localStorage.setItem('darkMode', 'light')
+  } else if (currentMode === 'light') {
+    document.body.classList.add('darkMode')
+    localStorage.setItem('darkMode', 'dark')
+  } else {
+    console.log(`This isn't dark or light... this shouldn't be happening...`)
+  }
+}
