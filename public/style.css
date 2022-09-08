@@ -93,10 +93,12 @@ form img {
   max-height: 200px;
   opacity: 80%;
   object-fit: cover;
+  object-position: 0% 70%;
 }
 
 #formDiv {
   padding: 25px;
+  padding-top: 10px;
   display: flex;
 }
 
@@ -143,7 +145,7 @@ button {
 
 :disabled {
   color: black;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 5px 15px; 
   background-color: #b7dab2;
   border-radius: 10px;
 }
