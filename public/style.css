@@ -177,7 +177,7 @@ h3 {
 }
 
 .darkMode {
-  background-color: black;
+  background-color: #757677;
 }
 
 .darkMode header {
@@ -185,7 +185,11 @@ h3 {
 }
 
 .darkMode header h2 {
-  color: #35712c;
+  color: #4ba23f;
+}
+
+.darkMode header img {
+  display: none;
 }
 
 .darkMode nav {
@@ -193,9 +197,27 @@ h3 {
 }
 
 .darkMode nav li {
-  color: #35712c;
+  color: #4ba23f;
 }
 
-.darkMode nav li .active {
+.darkMode #navBar .active {
   color: #fff;
+  background-color: #4ba23f;
+}
+
+.darkMode #navBar hr {
+  border-bottom: 3px solid #4ba23f;
+}
+
+.darkMode form {
+  background-color: #434344;
+  color: #fff;
+}
+
+.darkMode form select{
+  background-color: #e8e8e8;
+}
+
+.darkMode form textarea {
+  background-color: #e8e8e8;
 }
