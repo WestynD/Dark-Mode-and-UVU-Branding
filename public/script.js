@@ -204,7 +204,4 @@ function getDarkModePreference() {
   // OS Pref: [light, dark, unknown]
 }
 
-// var el = document.body;
-// el.classList.toggle('dark-mode')
 
-// DONE: Wire up the app's behavior here.

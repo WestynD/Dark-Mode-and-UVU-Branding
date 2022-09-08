@@ -249,3 +249,20 @@ h3 {
 .darkMode #logDiv {
   background-color: #dcdcdd;
 }
+
+.darkMode button {
+  color: white;
+  padding: 5px 15px 5px 15px;
+  background-color: #4ba23f;
+  border-radius: 10px;
+  border: none;
+  margin-top: 15px;
+}
+
+.darkMode :disabled {
+  color: black;
+  padding: 5px 15px 5px 15px;
+  background-color: #81be79;
+  border-radius: 10px;
+  border: 1px solid black;
+}
