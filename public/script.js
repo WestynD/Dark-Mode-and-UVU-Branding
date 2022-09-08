@@ -1,3 +1,5 @@
+let currentMode = ''
+
 async function onPageLoad() {
   // Set up the default behavior for some DOM elements
   getDarkModePreference()
@@ -160,24 +162,31 @@ function getDarkModePreference() {
       window.matchMedia('(prefers-color-scheme: dark)').matches
     ) {
       console.log('Browser Pref: dark')
-      localStorage.setItem('darkMode', true)
+      localStorage.setItem('darkMode', 'dark')
+      currentMode = 'dark'
     } else if (
       window.matchMedia &&
       window.matchMedia('(prefers-color-scheme: light)').matches
     ) {
       console.log('Browser Pref: light')
-      localStorage.setItem('darkMode', false)
+      localStorage.setItem('darkMode', 'light')
+      currentMode = 'light'
     } else {
       console.log('Preference Unknown. Preference set to light by default.')
-      localStorage.setItem('darkMode', false)
+      localStorage.setItem('darkMode', 'light')
+      currentMode = 'light'
     }
-  } else if (darkPreferred === 'true') {
+  } else if (darkPreferred === 'dark') {
     console.log('User Pref: dark')
-  } else if (darkPreferred === 'false') {
+    currentMode = 'dark'
+  } else if (darkPreferred === 'light') {
     console.log('User Pref: light')
+    currentMode = 'light'
   } else {
-    console.log('Oops, unespected value in localStorage!')
+    console.log('Oops, unexpected value in localStorage!')
   }
+
+  
 
   //set to light if none
 
