@@ -176,6 +176,26 @@ h3 {
   color: red;
 }
 
+@media only screen and (max-width: 1000px) {
+  #formDiv {
+    flex-direction: column;
+  }
+
+  .third-width {
+    width: 100%;
+  }
+
+  .two-third-width {
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+    border-left: 0px;
+    border-top: 2px solid #8e8c89;
+    margin-top: 25px;
+    padding-top: 10px;
+  }
+}
+
 .darkMode {
   background-color: #757677;
 }
@@ -214,7 +234,7 @@ h3 {
   color: #fff;
 }
 
-.darkMode form select{
+.darkMode form select {
   background-color: #e8e8e8;
 }
 
