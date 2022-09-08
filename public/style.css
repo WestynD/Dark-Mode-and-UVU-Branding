@@ -92,6 +92,7 @@ form img {
   width: 100%;
   max-height: 200px;
   opacity: 80%;
+  object-fit: cover;
 }
 
 #formDiv {
@@ -268,7 +269,7 @@ h3 {
 .darkMode button {
   color: black;
   padding: 5px 15px 5px 15px;
-  background-color: #ffb500;
+  background-color: #ffcb4d;
   border-radius: 10px;
   border: none;
   margin-top: 15px;
@@ -277,7 +278,7 @@ h3 {
 .darkMode :disabled {
   color: black;
   padding: 5px 15px 5px 15px;
-  background-color: #ffe199;
+  background-color: #c1c2c4;
   border-radius: 10px;
   border: 1px solid black;
 }

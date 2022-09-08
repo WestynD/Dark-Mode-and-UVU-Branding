@@ -204,7 +204,19 @@ function getDarkModePreference() {
   // OS Pref: [light, dark, unknown]
 }
 
-document.querySelector('#themeButton').addEventListener('click', switchTheme)
+document.querySelector('#themeButton').addEventListener('click', function () {
+  if (currentMode === 'dark') {
+    document.body.classList.remove('darkMode')
+    localStorage.setItem('darkMode', 'light')
+    currentMode = 'light'
+  } else if (currentMode === 'light') {
+    document.body.classList.add('darkMode')
+    localStorage.setItem('darkMode', 'dark')
+    currentMode = 'dark'
+  } else {
+    console.log(`This isn't dark or light... this shouldn't be happening...`)
+  }
+})
 
 function switchTheme() {
   if (currentMode === 'dark') {
