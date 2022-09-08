@@ -11,6 +11,8 @@ header {
   box-shadow: 0px 0px 10px black;
   padding: 10px;
   padding-left: 25px;
+  position: relative;
+  z-index: 2;
 }
 
 #headerDiv {
@@ -75,6 +77,8 @@ form {
 
 form img {
   width: 100%;
+  max-height: 200px;
+  opacity: 80%;
 }
 
 #formDiv {
@@ -174,4 +178,24 @@ h3 {
 
 .darkMode {
   background-color: black;
+}
+
+.darkMode header {
+  background-color: #434344;
+}
+
+.darkMode header h2 {
+  color: #35712c;
+}
+
+.darkMode nav {
+  background-color: #434344;
+}
+
+.darkMode nav li {
+  color: #35712c;
+}
+
+.darkMode nav li .active {
+  color: #fff;
 }
