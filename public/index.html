@@ -1,4 +1,3 @@
-<!-- TODO: Center elements -->
 <!-- TODO: Get Color Preference -->
 <!-- TODO: Store color preference if changed manually-->
 <!-- TODO: Create Dark mode styles -->
@@ -34,26 +33,28 @@
     <form id="logForm">
       <img src="UVU-img.png" alt="Image of the Fulton Library" />
       <div id="formDiv">
-        <label for="course">Choose course</label></br>
-        <select
-          aria-label="Select Course"
-          id="course"
-          name="course"
-          data-cy="course_select"
-        >
-          <option selected value="">Choose Courses</option></select
-        ><br />
+        <div class="h-flex">
+          <label for="course">Choose Course</label></br>
+          <select
+            aria-label="Select Course"
+            id="course"
+            name="course"
+            data-cy="course_select"
+          >
+            <option selected value="">Choose Courses</option></select
+          ><br />
 
-        <div id="idDiv" class="hidden">
-          <label for="uvuId">UVU ID</label><br />
-          <input
-            type="text"
-            id="uvuId"
-            name="uvuId"
-            placeholder="10234567"
-            data-cy="uvuId_input"
-          />
-          <p id="idWarning" class="hidden warning"></p>
+          <div id="idDiv" class="hidden">
+            <label for="uvuId">UVU ID</label><br />
+            <input
+              type="text"
+              id="uvuId"
+              name="uvuId"
+              placeholder="10234567"
+              data-cy="uvuId_input"
+            />
+            <p id="idWarning" class="hidden warning"></p>
+          </div>
         </div>
 
         <h3 id="uvuIdDisplay" data-cy="uvuIdDisplay">

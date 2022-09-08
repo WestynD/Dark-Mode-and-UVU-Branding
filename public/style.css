@@ -37,7 +37,7 @@ header h2 {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+
 }
 
 #navBar ul li {
@@ -83,7 +83,7 @@ form img {
 }
 
 select {
-  padding: 5px 10px;
+  padding: 5px 5px;
   box-sizing: border-box;
   width: 150px;
 }
@@ -120,6 +120,7 @@ form label {
 form textarea {
   width: 100%;
   box-sizing: border-box;
+  padding: 5px;
 }
 
 #logDiv p {
@@ -132,7 +133,7 @@ h3 {
 }
 
 #logDiv {
-  background-color:  #e8e8e8;
+  background-color: #e8e8e8;
   border-radius: 2px;
   border: 1px solid black;
   padding: 25px;
