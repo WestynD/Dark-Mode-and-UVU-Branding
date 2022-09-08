@@ -1,5 +1,6 @@
 async function onPageLoad() {
   // Set up the default behavior for some DOM elements
+  getDarkModePreference()
   selectCourses()
 }
 
@@ -146,5 +147,50 @@ function createUUID() {
     return v.toString(16)
   })
 }
+
+function getDarkModePreference() {
+  //check for localStorage
+  let darkPreferred = localStorage.getItem('darkMode')
+  if (darkPreferred === null) {
+    // Should be the last case:  localStorage.setItem('darkMode', false)
+    console.log('User Pref: unknown')
+    //check for browser preference
+    if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches
+    ) {
+      console.log('Browser Pref: dark')
+      localStorage.setItem('darkMode', true)
+    } else if (
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: light)').matches
+    ) {
+      console.log('Browser Pref: light')
+      localStorage.setItem('darkMode', false)
+    } else {
+      console.log('Preference Unknown. Preference set to light by default.')
+      localStorage.setItem('darkMode', false)
+    }
+  } else if (darkPreferred === true) {
+    console.log('User Pref: dark')
+  } else if (darkPreferred === false) {
+    console.log('User Pref: light')
+  } else {
+    console.log('Oops, unespected value in localStorage!')
+  }
+
+  //set to light if none
+
+  //   To show us that you did all the checks, print the following to the console.
+
+  // User Pref: [light, dark, unknown]
+
+  // Browser Pref: [light, dark, unkown]
+
+  // OS Pref: [light, dark, unknown]
+}
+
+// var el = document.body;
+// el.classList.toggle('dark-mode')
 
 // DONE: Wire up the app's behavior here.
