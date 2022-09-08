@@ -178,7 +178,6 @@ h3 {
   background-color: #e8e8e8;
   border-radius: 2px;
   border: 1px solid rgb(118, 118, 118);
-  
   padding: 25px;
   margin-bottom: 10px;
   overflow: auto;
@@ -186,9 +185,7 @@ h3 {
 }
 
 #logDiv li {
-  white-space: pre-line;
-  display: inline-block;
-  word-break: break-all;
+
 }
 
 .hidden {
