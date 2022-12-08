@@ -21,8 +21,7 @@ async function selectCourses() {
 
 async function requestCourses() {
   // Request courses from DB
-  let url =
-    'https://localhost:3000/api/v1/courses'
+  let url = 'http://localhost:3000/api/v1/courses'
   const courses = await fetch(url, { method: 'GET' })
   return courses.json()
 }
@@ -78,7 +77,7 @@ function addLog(container, log) {
 async function requestLogs() {
   // Requests the log data from the server
   var request = new XMLHttpRequest()
-  var requestURL = `https://localhost:3000/logs?courseId=${
+  var requestURL = `http://localhost:3000/logs?courseId=${
     document.getElementById('course').value
   }&uvuId=${document.getElementById('uvuId').value}`
   request.onreadystatechange = function () {
@@ -130,7 +129,7 @@ document.getElementById('logForm').addEventListener('submit', async (ev) => {
     text: ev.target[2].value,
     id: createUUID(),
   }
-  let url = 'https://localhost:3000/logs'
+  let url = 'http://localhost:3000/logs'
   const addLog = await fetch(url, {
     method: 'POST',
     headers: {
